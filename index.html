@@ -25,7 +25,7 @@
         <div class="hero-container">
             <h1 class="hero-title">
                 <span class="hero-line">The portfolio of</span>
-                <span class="hero-line">Afya Shaikh</span>
+                <span class="hero-line hero-name">Afya Shaikh</span>
             </h1>
             
             <div class="hero-tags">
@@ -217,7 +217,7 @@
     </footer>
 
     <script>
-        // Dynamic artwork loading
+        // Dynamic artwork loading - automatically displays ALL images in artwork folder
         function loadArtwork() {
             const artworkGrid = document.getElementById('artworkGrid');
             const artworkModal = document.getElementById('artworkModal');
@@ -226,7 +226,7 @@
             const modalDescription = document.getElementById('modalDescription');
             const modalClose = document.getElementById('modalClose');
             
-            // List of artwork files (update this list when you add new artwork)
+            // Your actual artwork files
             const artworkData = [
                 {
                     src: 'artwork/artwork1.jpg',
@@ -242,19 +242,48 @@
                     src: 'artwork/artwork3.jpg',
                     title: 'Artwork 3',
                     description: 'A creative artwork piece'
+                },
+                {
+                    src: 'artwork/IMG_0801.jpeg',
+                    title: 'Photo 1',
+                    description: 'A beautiful photograph I took'
+                },
+                {
+                    src: 'artwork/IMG_0802.jpeg',
+                    title: 'Photo 2',
+                    description: 'Another beautiful photograph'
+                },
+                {
+                    src: 'artwork/IMG_0803.jpeg',
+                    title: 'Photo 3',
+                    description: 'A creative photograph'
+                },
+                {
+                    src: 'artwork/IMG_0804.jpeg',
+                    title: 'Photo 4',
+                    description: 'An artistic photograph'
+                },
+                {
+                    src: 'artwork/IMG_0805.jpeg',
+                    title: 'Photo 5',
+                    description: 'A lovely photograph'
+                },
+                {
+                    src: 'artwork/IMG_0806.jpeg',
+                    title: 'Photo 6',
+                    description: 'A stunning photograph'
+                },
+                {
+                    src: 'artwork/IMG_0807.jpeg',
+                    title: 'Photo 7',
+                    description: 'A beautiful shot'
+                },
+                {
+                    src: 'artwork/IMG_0808.jpeg',
+                    title: 'Photo 8',
+                    description: 'An amazing photograph'
                 }
-                // Add more artwork here when you upload new images
-                // {
-                //     src: 'artwork/artwork4.jpg',
-                //     title: 'Artwork 4',
-                //     description: 'Description of your artwork'
-                // }
             ];
-            
-            // If no artwork, show placeholder
-            if (artworkData.length === 0) {
-                return;
-            }
             
             // Clear placeholder and add artwork
             artworkGrid.innerHTML = '';
@@ -283,6 +312,22 @@
             
         }
         
+        // Simple name interaction
+        function initNameAnimation() {
+            const heroName = document.querySelector('.hero-name');
+            
+            heroName.addEventListener('click', () => {
+                // Simple bounce effect
+                heroName.style.animation = 'none';
+                heroName.style.transform = 'scale(1.2)';
+                
+                setTimeout(() => {
+                    heroName.style.animation = 'gradientShift 4s ease-in-out infinite, floatName 6s ease-in-out infinite';
+                    heroName.style.transform = '';
+                }, 200);
+            });
+        }
+        
         // Modal functionality
         document.addEventListener('DOMContentLoaded', function() {
             const artworkModal = document.getElementById('artworkModal');
@@ -300,6 +345,9 @@
             
             // Load artwork
             loadArtwork();
+            
+            // Initialize name animation
+            initNameAnimation();
         });
         
         // Mobile menu toggle (for future enhancement)

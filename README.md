@@ -144,10 +144,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Contributing
 
 Feel free to fork this project and submit pull requests for improvements!
-
-## 📧 Contact
-
-**Afya Shaikh**
-- Portfolio: [Your Website URL]
-- Email: [Your Email]
-- LinkedIn: [Your LinkedIn Profile]

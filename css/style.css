@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+html {
+  font-style: normal;
+  font-weight: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 2em;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #2d2d2d;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.8em;
+  color: #111;
+  margin-bottom: 0.8em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.9em;
+  color: #222;
+  margin: 1.5em 0 0.8em 0;
+  font-weight: 600;
+  border-left: 4px solid #0066cc;
+  padding-left: 0.5em;
+}
+
+/* Links */
+.hyperlinkstop {
+  color: #0066cc;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 0.3em;
+  transition: color 0.2s ease;
+}
+
+.hyperlinkstop:hover {
+  color: #004c99;
+  text-decoration: underline;
+}
+
+/* Profile image */
+.me {
+  max-width: 180px;
+  height: auto;
+  border-radius: 50%;
+  margin: 2em auto 1em auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.imgcaption {
+  font-size: 1.05em;
+  color: #666;
+  text-align: center;
+  margin: 0.5em 0 1.5em 0;
+  font-weight: 500;
+}
+
+/* Section titles */
+.topictitle {
+  background-color: #f0f4f8;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.6em 1.2em;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 6px;
+  margin: 1.5em 0 1em 0;
+  color: #004c99;
+}
+
+.hyperlinks {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hyperlinks:hover {
+  text-decoration: underline;
+  color: #004c99;
+}
+
+p {
+  font-size: 1.1em;
+  color: #333;
+  margin: 0 0 1.5em 0;
+  text-align: left;
+  line-height: 1.7;
+}
+
+b {
+  color: #111;
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2em 0;
+}
+
+/* Code blocks */
+.bibtex {
+  background-color: #f7f9fb;
+  color: #222;
+  font-family: 'Menlo', 'Monaco', monospace;
+  font-size: 0.95em;
+  padding: 1em;
+  border-radius: 6px;
+  width: 100%;
+  margin: 1em 0;
+  white-space: pre-wrap;
+  text-align: left;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.researchpaper {
+  margin-bottom: 2em;
+  padding: 1em 1.2em;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.researchpaper:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Hide/show utility */
+.hidden {
+  display: none;
+}
+.unhidden {
+  display: block;
+  position: relative;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+  font-size: 0.95em;
+}
+
+th, td {
+  padding: 0.75em 1em;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 1.2em;
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .me {
+    max-width: 140px;
+  }
+}
+
+/* Buttons */
+.custom-button {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.6em !important;
+  background: #0066cc !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  border-radius: 2em !important;
+  padding: 0.5em 1.4em !important;
+  transition: background 0.25s, transform 0.2s !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08) !important;
+  justify-content: center !important;
+}
+
+.custom-button:hover {
+  background: #004c99 !important;
+  transform: translateY(-2px) scale(1.03) !important;
+}
+
+.see-more-btn {
+  background-color: #f0f4f8;
+  border: 1px solid #d6d6d6;
+  color: #333;
+  padding: 0.6em 1.2em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.see-more-btn:hover {
+  background-color: #e2eaf2;
+  border-color: #bbb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
